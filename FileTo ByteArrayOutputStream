@@ -1,0 +1,10 @@
+String pdfFileName = "C://Users/zanderkong/Desktop/sample_total_master_report.pdf";
+ByteArrayOutputStream bOutput = null;
+
+File file=new File(pdfFileName);
+byte[] fileInBytes = new byte[(int) file.length()];
+
+bOutput = new ByteArrayOutputStream(fileInBytes.length);
+bOutput.write(fileInBytes, 0, fileInBytes.length);
+
+System.out.println("OutputStream is Done!!!返回的字节数高达----->" + fileInBytes.length);
