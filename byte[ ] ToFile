@@ -1,0 +1,7 @@
+String pdfFileName2 = "C://Users/zanderkong/Desktop/receive_report.pdf";
+Path path2 = Paths.get(pdfFileName2);
+    try {
+  Files.write(path2, fileInBytes);
+} catch (IOException e) {
+  e.printStackTrace();
+}
