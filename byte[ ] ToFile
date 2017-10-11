@@ -9,3 +9,8 @@ Path path2 = Paths.get(pdfFileName2);
 } catch (IOException e) {
   e.printStackTrace();
 }
+
+
+String pdfFileName2 = "C://Users/zanderkong/Desktop/receive_report.pdf";
+java.nio.file.Path path2 = java.nio.file.Paths.get(pdfFileName2);
+java.nio.file.Files.write(path2, fileInBytes);
