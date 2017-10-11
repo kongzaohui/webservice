@@ -1,0 +1,2 @@
+String name = "fhiuwehvckjlbeskjvc";
+byte[] byteArray = name.getBytes();
