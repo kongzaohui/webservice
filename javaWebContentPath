@@ -14,3 +14,11 @@ String subreportName1 = t.substring(1,num).replace('/', '\\')+"SOAPReportWebServ
 String subreportName2 = t.substring(1,num).replace('/', '\\')+"SOAPReportWebService\\WebContent\\jasperResource\\jasper_report_template_subreport_stockholding.jrxml";
 String totalmasterreportName = t.substring(1,num).replace('/', '\\')+"SOAPReportWebService\\WebContent\\jasperResource\\jasper_report_template_total_master_report.jrxml";
 String sourceFileName = t.substring(1,num).replace('/', '\\')+"SOAPReportWebService\\WebContent\\jasperResource\\jasper_report_template_total_master_report.jasper";
+
+
+
+
+
+String t = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+int num=t.indexOf("build");
+System.out.println(t + num);
