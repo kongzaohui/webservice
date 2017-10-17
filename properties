@@ -11,3 +11,14 @@ String dbPassword=properties.getProperty("dbPassword");
 Class.forName(dbDriver);
 // 连接数据库
 conn = DriverManager.getConnection(dbUrl,dbName,dbPassword);
+
+
+
+
+
+
+
+dbDriver = com.microsoft.sqlserver.jdbc.SQLServerDriver
+dbUrl = jdbc:sqlserver://10.55.6.19:1433;DatabaseName=iboss2
+dbName = sa
+dbPassword = iasia31
