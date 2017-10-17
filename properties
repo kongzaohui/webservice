@@ -1,0 +1,13 @@
+Properties properties=new Properties();
+
+InputStream in = new FileInputStream(configPath);
+properties.load(in);
+
+String dbDriver=properties.getProperty("dbDriver");
+String dbUrl=properties.getProperty("dbUrl");
+String dbName=properties.getProperty("dbName");
+String dbPassword=properties.getProperty("dbPassword");
+
+Class.forName(dbDriver);
+// 连接数据库
+conn = DriverManager.getConnection(dbUrl,dbName,dbPassword);
