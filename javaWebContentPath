@@ -22,3 +22,10 @@ String sourceFileName = t.substring(1,num).replace('/', '\\')+"SOAPReportWebServ
 String t = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 int num=t.indexOf("build");
 System.out.println(t + num);
+
+
+
+其他获取路径的方法
+System.out.println(TestLocation.class.getResource("/").getPath()); 
+System.out.println(System.getProperty("user.dir"));
+System.out.println(TestLocation.class.getResource("")); 
