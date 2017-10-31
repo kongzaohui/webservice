@@ -1,3 +1,3 @@
-1、新建 visual C# --> windows --> Console Application<br>
-2、在此项目上右击，选择 Add Web Reference，将web service的WSDL放入URL中，Add Reference<br>
+1、新建 visual C# --> windows --> Console Application；
+2、在此项目上右击，选择 Add Web Reference，将web service的WSDL放入URL中，Add Reference；
 3、像在其他UI或者java project中调用相关方法即可
