@@ -1,0 +1,21 @@
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.Path;
+
+String pdfFileName = "C://Users/zanderkong/Desktop/sample_total_master_report.pdf";
+Path path = Paths.get(pdfFileName);
+byte[] fileInBytes = null;
+try {
+  fileInBytes = Files.readAllBytes(path);
+} catch (IOException e) {
+  e.printStackTrace();
+}
+
+
+//get string from file
+String txtFileName = "C://Users/zanderkong/Desktop/totalList.txt";	
+try {
+    Files.lines(Paths.get(txtFileName), StandardCharsets.UTF_8).forEach(System.out::println);
+} catch (IOException e1) {
+    //
+}
